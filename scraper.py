@@ -169,7 +169,7 @@ def parse_transcript(filename):
         seq += 1
         table.insert(contrib)
 
-    q = '''SELECT * FROM data WHERE wahlperiode = :w AND sitzung = :s
+    q = '''SELECT * FROM de_bundestag_plpr WHERE wahlperiode = :w AND sitzung = :s
             ORDER BY sequence ASC'''
     fcsv = os.path.basename(filename).replace('.txt', '.csv')
     rp = eng.query(q, w=wp, s=session)
