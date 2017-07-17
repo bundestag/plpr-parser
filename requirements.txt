@@ -1,7 +1,7 @@
-
 requests
 lxml
 normality
 dataset
+psycopg2
 
-git+https://github.com/bundestag/normdatei
+git+https://github.com/datenschule/normdatei
